@@ -1,0 +1,39 @@
+{
+    "name": "csa-test",
+    "version": "0.0.1",
+    "license": "OSL-3.0",
+    "dependencies": {
+        "@scandipwa/scandipwa": "4.4.0",
+        "@scandipwa/scandipwa-scripts": "2.4.6",
+        "@scandipwa/scandipwa-storefinder": "file:packages/@scandipwa/scandipwa-storefinder"
+    },
+    "scandipwa": {
+        "type": "theme",
+        "locales": {
+            "en_US": true
+        },
+        "parentTheme": "@scandipwa/scandipwa",
+        "extensions": {
+            "@scandipwa/scandipwa-storefinder": true
+        }
+    },
+    "scripts": {
+        "start": "scandipwa-scripts start",
+        "build": "scandipwa-scripts build",
+        "postinstall": "scandipwa-scripts link",
+        "postupdate": "scandipwa-scripts link"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "proxy": "https://step2.test/"
+}
