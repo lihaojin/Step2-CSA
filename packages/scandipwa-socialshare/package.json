@@ -1,0 +1,14 @@
+{
+    "name": "scandipwa-socialshare",
+    "version": "0.0.1",
+    "license": "OSL-3.0",
+    "dependencies": {
+        "react-share": "4.4.0"
+    },
+    "scandipwa": {
+        "type": "extension"
+    },
+    "eslintConfig": {
+        "extends": "@scandipwa"
+    }
+}
